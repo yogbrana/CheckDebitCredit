@@ -11,6 +11,21 @@ body {
   flex-direction: column;
 }
 
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+/* Main container */
 .container {
   display: flex;
   flex: 1;
@@ -39,12 +54,22 @@ textarea {
   border-radius: 4px;
 }
 
+/* Balance display */
 #balance {
   text-align: center;
   font-size: 24px;
   padding: 15px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
 }
 
 /* Responsive */

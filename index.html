@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <header>
+    <div class="logo">📒</div>
+    <h1>Credit-Debit Notepad</h1>
+  </header>
+
+  <main class="container">
     <div class="note credit">
       <h2>Credit</h2>
       <textarea id="creditInput" placeholder="Enter credits (one per line)..."></textarea>
@@ -16,8 +21,13 @@
       <h2>Debit</h2>
       <textarea id="debitInput" placeholder="Enter debits (one per line)..."></textarea>
     </div>
-  </div>
+  </main>
+
   <div id="balance">Balance: 0</div>
+
+  <footer>
+    <p>This software is under <strong>Yogdaji Inc.</strong></p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
