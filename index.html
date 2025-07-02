@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Credit-Debit Notepad</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Debit Credit Notepad</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">📒</div>
-    <h1>Credit-Debit Notepad</h1>
-  </header>
 
-  <main class="container">
-    <div class="note credit">
-      <h2>Credit</h2>
-      <textarea id="creditInput" placeholder="Enter credits (one per line)..."></textarea>
-    </div>
-    <div class="note debit">
-      <h2>Debit</h2>
-      <textarea id="debitInput" placeholder="Enter debits (one per line)..."></textarea>
-    </div>
-  </main>
+<header>
+  <div class="logo">Yogdaji</div>
+  <button class="dark-toggle" id="darkToggle">Dark Mode</button>
+</header>
 
-  <div id="balance">Balance: 0</div>
+<div class="account-selector">
+  <label for="accounts">Select Account:</label>
+  <select id="accounts"></select>
+  <input type="text" id="newAccountName" placeholder="New account name" />
+  <button id="createAccount">Create</button>
+  <button id="deleteAccount" style="background:#c33;">Delete</button>
+</div>
 
-  <footer>
-    <p>This software is under <strong>Yogdaji Inc.</strong></p>
-  </footer>
+<main>
+  <div class="notes debit">
+    <h2>Debit</h2>
+    <textarea id="debitNote" placeholder="Write debit notes..."></textarea>
+  </div>
+  <div class="notes credit">
+    <h2>Credit</h2>
+    <textarea id="creditNote" placeholder="Write credit notes..."></textarea>
+  </div>
+</main>
 
-  <script src="script.js"></script>
+<footer>
+  <div class="socials">
+    <a href="#" target="_blank">Facebook</a> |
+    <a href="#" target="_blank">Twitter</a> |
+    <a href="#" target="_blank">LinkedIn</a> |
+    <a href="#" target="_blank">Instagram</a>
+  </div>
+  <div>© 2025 Yogdaji Software. Designed by Yogdaji Team.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
